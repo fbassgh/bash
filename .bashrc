@@ -84,6 +84,7 @@ alias versions='echo -e "\n--- JAVA ---"; javav;
 		echo -e "\n--- SUBVERSION ---"; svnv; 
 		echo -e "\n--- GIT ---";git --version; 
 		echo -e "\n--- DOCKER ---";docker -v; 
+		echo -e "\n--- GRADLE ---";gradle -v; 
 		echo -e "\n--- GROOVY ---";groovyv; 
 		echo -e "\n--- TOMCAT ---";catalina.sh version; 
 		echo -e "\n--- PERL ---";perl --version; 
