@@ -22,15 +22,22 @@ alias cp='cp -p'
 alias ulimit='ulimit -S'
 alias scp='scp -v'
 
-# SW development apps
+# Web Browsers
 alias firefox='nohup firefox &>/dev/null &'
 alias chrome='nohup google-chrome &>/dev/null &'
+
+# ServiceMix
+alias smxstart='sudo sh /opt/apache-servicemix-6.1.1/bin/start'
+alias smxstop='sudo sh /opt/apache-servicemix-6.1.1/bin/stop'
+alias smxrs='smxstop;smxstart'
+alias smxclient='sudo sh /opt/apache-servicemix-6.1.1/bin/client'
+
+# SW development apps
 alias dbvis='nohup dbvis &>/dev/null &'
 alias sqld='nohup sqldeveloper &>/dev/null &'
 alias netb='nohup netbeans &>/dev/null &'
 alias grc='nohup groovyConsole &>/dev/null &'
 alias sui='nohup soapui.sh &>/dev/null &'
-alias thunderbird='nohup thunderbird &>/dev/null &'
 alias davmail='nohup davmail.sh &>/dev/null &'
 alias postman='nohup /opt/google/chrome/google-chrome --profile-directory=Default --app-id=fhbjgbiflinjbdggehcddcbncdddomop &>/dev/null &'
 alias javav='java -version'
@@ -50,10 +57,6 @@ alias svns='svn status'
 alias svnci='svn ci'
 alias svnco='svn co'
 alias svnh='svn help'
-alias u98='svnu ~/code/SP9-Patch8'
-alias u99='svnu ~/code/SP9-Patch9'
-alias u11='svnu ~/code/SP11'
-alias uall='u98; u99; u11'
 
 # Miscellaneous
 alias esrc='source ~/.bash_profile'
@@ -68,12 +71,7 @@ alias lt='ls -lat'
 alias lart='ls -lart'
 alias llhs='ll ~/hostshare'
 
-alias cdsp98='cd ~/code/SP9-Patch8; ll'
-alias cdsp99='cd ~/code/SP9-Patch9; ll'
-alias cdsp11='cd ~/code/SP11; ll'
-alias cdd='cd ~/Downloads; ll'
-
-## 'hostshare' is a link a shared folder on the host OS 
+## 'hostshare' is a link to a shared folder on the host OS accessible from this VM
 alias cdhs='cd ~/hostshare; ll'
 
 alias hosts='sudo vi /etc/hosts'
