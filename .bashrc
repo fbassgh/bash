@@ -18,19 +18,26 @@ fi
 
 
 # override defaults
-alias cp='cp -p'
+alias cp='cp -vp'
 alias ulimit='ulimit -S'
 alias scp='scp -v'
+alias mv='mv -v'
+alias cls='clear'
+alias ll='ls -la'
+alias llh='ls -lah'
+alias lt='ls -lat'
+alias lart='ls -lart'
+alias llhs='ll ~/hostshare'
 
 # Web Browsers
 alias firefox='nohup firefox &>/dev/null &'
 alias chrome='nohup google-chrome &>/dev/null &'
 
 # ServiceMix
-alias smxstart='sudo sh /opt/apache-servicemix-6.1.1/bin/start'
-alias smxstop='sudo sh /opt/apache-servicemix-6.1.1/bin/stop'
+alias smxstart='/opt/apache-servicemix-6.1.1/bin/servicemix start'
+alias smxstop='/opt/apache-servicemix-6.1.1/bin/servicemix stop'
 alias smxrs='smxstop;smxstart'
-alias smxclient='sudo sh /opt/apache-servicemix-6.1.1/bin/client'
+alias smxclient='/opt/apache-servicemix-6.1.1/bin/client'
 
 # SW development apps
 alias dbvis='nohup dbvis &>/dev/null &'
@@ -58,24 +65,16 @@ alias svnci='svn ci'
 alias svnco='svn co'
 alias svnh='svn help'
 
+# Git
+alias gits='git status'
+alias gith='git --help'
+
 # Miscellaneous
 alias esrc='source ~/.bash_profile'
 alias bashrc='vi ~/.bashrc'
 alias bashpro='vi ~/.bash_profile'
 alias creds='cat ~/hostshare/SW_dev_cred.txt'
-
-alias cls='clear'
-alias ll='ls -la'
-alias llh='ls -lah'
-alias lt='ls -lat'
-alias lart='ls -lart'
-alias llhs='ll ~/hostshare'
-
-## 'hostshare' is a link to a shared folder on the host OS accessible from this VM
-alias cdhs='cd ~/hostshare; ll'
-
 alias hosts='sudo vi /etc/hosts'
-
 alias mci='mvn clean install'
 alias versions='echo -e "\n--- JAVA ---"; javav; 
 		echo -e "\n--- MAVEN ---"; mvnv; 
@@ -85,6 +84,7 @@ alias versions='echo -e "\n--- JAVA ---"; javav;
 		echo -e "\n--- GRADLE ---";gradle -v; 
 		echo -e "\n--- GROOVY ---";groovyv; 
 		echo -e "\n--- TOMCAT ---";catalina.sh version; 
+		echo -e "\n--- GLASSFISH ---";asadmin version | grep GlassFish; 
 		echo -e "\n--- PERL ---";perl --version; 
 		echo -e "\n--- PYTHON ---";python --version; 
 		echo -e "\n--- GCC ---";gcc --version; 
