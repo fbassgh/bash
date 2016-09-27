@@ -28,6 +28,7 @@ alias llh='ls -lah'
 alias lt='ls -lat'
 alias lart='ls -lart'
 alias llhs='ll ~/hostshare'
+alias vi='/usr/bin/vim'
 
 # Web Browsers
 alias firefox='nohup firefox &>/dev/null &'
