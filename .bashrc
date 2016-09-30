@@ -11,13 +11,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
+source ~/.bash_profile
 
 # User specific aliases and functions
 
-
-# override defaults
 alias cp='cp -vp'
 alias ulimit='ulimit -S'
 alias scp='scp -v'
@@ -35,15 +32,16 @@ alias firefox='nohup firefox &>/dev/null &'
 alias chrome='nohup google-chrome &>/dev/null &'
 
 # ServiceMix
-alias smxstart='/opt/apache-servicemix-6.1.1/bin/servicemix start'
-alias smxstop='/opt/apache-servicemix-6.1.1/bin/servicemix stop'
+alias smxclient='${SERVICEMIX_HOME}/bin/client'
+alias smxstart='${SERVICEMIX_HOME}/bin/servicemix start'
+alias smxstop='${SERVICEMIX_HOME}/bin/servicemix stop'
 alias smxrs='smxstop;smxstart'
-alias smxclient='/opt/apache-servicemix-6.1.1/bin/client'
 
 # SW development apps
 alias dbvis='nohup dbvis &>/dev/null &'
 alias sqld='nohup sqldeveloper &>/dev/null &'
 alias netb='nohup netbeans &>/dev/null &'
+alias idea='nohup idea.sh &>/dev/null &'
 alias grc='nohup groovyConsole &>/dev/null &'
 alias sui='nohup soapui.sh &>/dev/null &'
 alias davmail='nohup davmail.sh &>/dev/null &'
@@ -54,6 +52,8 @@ alias groovyv='groovy -v'
 alias tomcatstop='catalina.sh stop'
 alias tomcatstart='catalina.sh start'
 alias tomcatrs='tomcatstop;tomcatstart'
+alias l7client='nohup ~/Manager-8.4.00/Manager.sh &>/dev/null &'
+alias l7client9='nohup ~/Manager-8.2.00/Manager.sh &>/dev/null &'
 
 # Subversion
 alias svnv='svn --version'
@@ -71,7 +71,6 @@ alias gits='git status'
 alias gith='git --help'
 
 # Miscellaneous
-alias esrc='source ~/.bash_profile'
 alias bashrc='vi ~/.bashrc'
 alias bashpro='vi ~/.bash_profile'
 alias creds='cat ~/hostshare/SW_dev_cred.txt'

@@ -8,9 +8,9 @@
 
 
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
-fi
+#if [ -f ~/.bashrc ]; then
+#	source ~/.bashrc
+#fi
 
 # User specific environment and startup programs
 
@@ -20,6 +20,7 @@ export CLOC_HOME=/opt/cloc-1.64
 export GRADLE_HOME=/opt/gradle-3.0
 export JAVA_HOME=/opt/jdk1.8.0_102
 export NB_HOME=/opt/netbeans8.1
+export IDEA_HOME=/opt/idea-IU-162.2032.8
 export SOAPUI_HOME=/opt/SoapUI-5.0.0
 export SERVICEMIX_HOME=/opt/apache-servicemix-6.1.1
 export GLASSFISH_HOME=/opt/glassfish4/glassfish
@@ -32,5 +33,5 @@ export M2_HOME=/opt/apache-maven-3.3.9
 export MAVEN_OPTS="${INIT_JVM_HEAP_SIZE} ${MAX_JVM_HEAP_SIZE}"
 
 
-export PATH=$GLASSFISH_HOME/bin:$SERVICEMIX_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$CLOC_HOME:$SOAPUI_HOME/bin:$M2_HOME/bin:$JAVA_HOME/bin:$NB_HOME/bin:$PATH
+export PATH=$IDEA_HOME/bin:$GLASSFISH_HOME/bin:$SERVICEMIX_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$CLOC_HOME:$SOAPUI_HOME/bin:$M2_HOME/bin:$JAVA_HOME/bin:$NB_HOME/bin:$PATH
 
