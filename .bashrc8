@@ -1,6 +1,8 @@
 #!/bin/bash 
 
-# .bashrc
+# .bashrc8
+#
+# For JDK 8 SW Dev Environment
 #
 # @author: frederick.bass
 #
@@ -11,5 +13,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-source ~/.bash_profile;source ~/.bash_aliases
+source ~/.bash_profile8;
+source ~/.bash_aliases
 

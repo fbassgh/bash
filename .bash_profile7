@@ -1,16 +1,13 @@
 #!/bin/bash 
 
-# .bash_profile
+# .bash_profilie7
+#
+# For JDK 7 SW Development.
 #
 # @author: frederick.bass
 #
 #
 
-
-# Get the aliases and functions
-#if [ -f ~/.bashrc ]; then
-#	source ~/.bashrc
-#fi
 
 # User specific environment and startup programs
 
@@ -20,16 +17,15 @@ export CLOC_HOME=/opt/cloc-1.64
 export GRADLE_HOME=/opt/gradle-3.1
 export GRAILS_HOME=~/.sdkman/candidates/grails/current/
 export GROOVY_HOME=/opt/groovy-2.4.7
-#export JAVA_HOME=/opt/jdk-9-ea_140
-#export JAVA_HOME=/opt/jdk1.8.0_102
-export JAVA_HOME=/opt/jdk1.7.0_60
-#export NB_HOME=/opt/netbeans8.1
 export NB_HOME=/opt/netbeans8.2
 export IDEA_HOME=/opt/idea-IU-162.2032.8
 export SOAPUI_HOME=/opt/SoapUI-5.0.0
 export SERVICEMIX_HOME=/opt/apache-servicemix-6.1.1
 export GLASSFISH_HOME=/opt/glassfish4/glassfish
 export EDITOR=/usr/bin/vim
+
+export JAVA_HOME=/opt/jdk1.7.0_60
+
 
 INIT_JVM_HEAP_SIZE=-Xms2g
 MAX_JVM_HEAP_SIZE=-Xmx8g

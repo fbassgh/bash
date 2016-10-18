@@ -10,7 +10,7 @@
 
 # User specific aliases and functions
 
-alias cp='cp -vp'
+alias cp='yes | cp -vp'
 alias ulimit='ulimit -S'
 alias scp='scp -v'
 alias mv='mv -v'

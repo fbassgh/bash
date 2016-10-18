@@ -1,6 +1,8 @@
 #!/bin/bash 
 
-# .bashrc
+# .bashrc7
+#
+# For JDK 7 SW Dev Environment
 #
 # @author: frederick.bass
 #
@@ -11,5 +13,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-source ~/.bash_profile;source ~/.bash_aliases
+source ~/.bash_profile7;
+source ~/.bash_aliases;
 
