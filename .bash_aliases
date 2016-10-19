@@ -1,10 +1,6 @@
-#!/bin/bash
 
 #
 # .bash_aliases
-#
-#
-# @author: frederick.bass
 #
 
 
@@ -48,6 +44,12 @@ alias tomcatstart='catalina.sh start'
 alias tomcatrs='tomcatstop;tomcatstart'
 alias l7client='nohup ~/Manager-8.4.00/Manager.sh &>/dev/null &'
 alias l7client9='nohup ~/Manager-8.2.00/Manager.sh &>/dev/null &'
+alias understand='nohup sh /opt/understand-4.0.860-Linux-64bit/bin/linux64/understand &>/dev/null &'
+
+# Java SW Dev Environment
+alias j7='echo -e "\nConfiguring environment for Java 7...\n";source ~/.bash_profile7;source ~/.bash_aliases;javav;echo -e "\n"'
+alias j8='echo -e "\nConfiguring environment for Java 8...\n";source ~/.bash_profile8;source ~/.bash_aliases;javav;echo -e "\n"'
+alias j9='echo -e "\nConfiguring environment for Java 9...\n";source ~/.bash_profile9;source ~/.bash_aliases;javav;echo -e "\n"'
 
 # Subversion
 alias svnv='svn --version'

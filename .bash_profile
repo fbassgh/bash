@@ -1,4 +1,3 @@
-#!/bin/bash 
 
 # .bash_profile
 #
@@ -47,7 +46,7 @@ export PATH=$GRAILS_HOME/bin:$GROOVY_HOME/bin:$IDEA_HOME/bin:$GLASSFISH_HOME/bin
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/frederick.bass/.sdkman"
-[[ -s "/home/frederick.bass/.sdkman/bin/sdkman-init.sh" ]] && source "/home/frederick.bass/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="~/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
 
