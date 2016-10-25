@@ -73,30 +73,43 @@ alias creds='cat ~/hostshare/SW_dev_cred.txt'
 alias hosts='sudo vi /etc/hosts'
 alias chosts='sudo cat /etc/hosts'
 alias mci='mvn clean install'
-alias versions='echo -e "\n--- JAVA ---"; javav; 
-                echo -e "\n--- MAVEN ---"; mvnv; 
-                echo -e "\n--- SUBVERSION ---"; svnv; 
-                echo -e "\n--- GIT ---";git --version; 
-                echo -e "\n--- DOCKER ---";docker -v; 
-                echo -e "\n--- GRADLE ---";gradle -v; 
-                echo -e "\n--- GRAILS ---";grails -v; 
-                echo -e "\n--- GROOVY ---";groovyv; 
-                echo -e "\n--- TOMCAT ---";catalina.sh version; 
-                echo -e "\n--- GLASSFISH ---";asadmin version | grep GlassFish; 
-                echo -e "\n--- PERL ---";perl --version; 
-                echo -e "\n--- PYTHON ---";python --version; 
-                echo -e "\n--- GCC ---";gcc --version; 
-                echo -e "\n--- MAKE ---";make --version; 
-                echo -e "\n--- OPERATING SYSTEM ---"; uname -a; 
-                echo -e "\n"'
+alias dumpversions='echo -e "\n--- JAVA ---"; java -version; 
+                    echo -e "\n--- MAVEN ---"; mvn -v | grep "Apache Maven"; 
+                    echo -e "\n--- SUBVERSION ---"; svn --version | grep " version"; 
+                    echo -e "\n--- GIT ---";git --version; 
+                    echo -e "\n--- MERCURIAL ---";hg version | grep "version"; 
+                    echo -e "\n--- DOCKER ---";docker -v; 
+                    echo -e "\n--- GRADLE ---";gradle -v | grep "Gradle"; 
+                    echo -e "\n--- GRAILS ---";grails -v; 
+                    echo -e "\n--- GROOVY ---";groovy -v; 
+                    echo -e "\n--- TOMCAT ---";catalina.sh version | grep "Server version"; 
+                    echo -e "\n--- GLASSFISH ---";asadmin version | grep "Version ="; 
+                    echo -e "\n--- PERL ---";perl --version | grep "This is perl"; 
+                    echo -e "\n--- PYTHON ---";python --version; 
+                    echo -e "\n--- GCC ---";gcc --version | grep gcc; 
+                    echo -e "\n--- MAKE ---";make --version | grep "GNU Make"; 
+                    echo -e "\n--- OPERATING SYSTEM ---"; uname -a; 
+                    echo -e "\n"'
 
-alias epath='echo -e "\n--- PATH ---\n${PATH}\n"'
+alias dumptime='echo -e "\nLocal date/time:\t$(date)";echo -e "Universal date/time:\t$(date --utc)\n"'
 
-alias osinfo='echo -e "\n--- OPERATING SYSTEM ---"; uname -a;
-              echo -e "\n--- HW PLATFORM ---"; lscpu;
-              echo -e "\n--- FILE SYSTEM ---"; df -T;
-              echo -e "\n--- NETWORK INTERFACES ---";ip link show;
-              echo -e "\n";netstat -i;
-              echo -e "\n";ifconfig -a;
-              echo -e "\n"'
-              
+alias dumppath='echo -e "\n--- PATH ---\n${PATH}\n"'
+
+alias dumposinfo='echo -e "\n--- OPERATING SYSTEM ---"; uname -a;
+                  echo -e "\n--- HW PLATFORM ---"; lscpu;
+                  echo -e "\n--- FILE SYSTEM ---"; df -T;
+                  echo -e "\n--- NETWORK INTERFACES ---";ip link show;
+                  echo -e "\n";netstat -i;
+                  echo -e "\n";ifconfig -a;
+                  echo -e "\n"'
+
+alias dumpall='
+               echo -e "---------------------\n";
+               echo -e "--- Begin DumpAll ---\n";
+               echo -e "---------------------";
+               dumpversions;dumppath;dumposinfo;
+               echo -e "-------------------\n";
+               echo -e "--- End DumpAll ---\n";
+               echo -e "-------------------\n"'
+
+
