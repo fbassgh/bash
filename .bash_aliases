@@ -6,17 +6,18 @@
 
 # User specific aliases and functions
 
-alias cp='yes | cp -vp'
-alias ulimit='ulimit -S'
+alias cp='yes | cp -pv'
+alias mv='mv -fv'
+alias rm='rm -rfv'
 alias scp='scp -v'
-alias mv='mv -v'
 alias cls='clear'
 alias ll='ls -la'
 alias llh='ls -lah'
 alias lt='ls -lat'
 alias lart='ls -lart'
-alias llhs='ll ~/hostshare'
 alias vi='/usr/bin/vim'
+alias whatsize='du -s'
+alias psef='ps -ef'
 
 # Web Browsers
 alias firefox='nohup firefox &>/dev/null &'
@@ -29,6 +30,7 @@ alias smxstop='${SERVICEMIX_HOME}/bin/servicemix stop'
 alias smxrs='smxstop;smxstart'
 
 # SW development apps
+alias jedit='nohup jedit &>/dev/null &'
 alias dbvis='nohup dbvis &>/dev/null &'
 alias sqld='nohup sqldeveloper &>/dev/null &'
 alias netb='nohup netbeans &>/dev/null &'
@@ -63,8 +65,11 @@ alias svnco='svn co'
 alias svnh='svn help'
 
 # Git
-alias gits='git status'
+alias gita='git add'
+alias gitc='git commit'
 alias gith='git --help'
+alias gits='git status'
+alias gitv='git --version'
 
 # Miscellaneous
 alias bashrc='vi ~/.bashrc'

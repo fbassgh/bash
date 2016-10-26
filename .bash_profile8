@@ -15,6 +15,7 @@ export GRADLE_HOME=/opt/gradle-3.1
 export GRAILS_HOME=~/.sdkman/candidates/grails/current/
 export GROOVY_HOME=/opt/groovy-2.4.7
 export IDEA_HOME=/opt/idea-IU-162.2032.8
+export JEDIT_HOME=/opt/jEdit-5.3.0
 export NB_HOME=/opt/netbeans8.2
 export PMD_HOME=/opt/pmd-5.5.1
 export SERVICEMIX_HOME=/opt/apache-servicemix-6.1.1
@@ -30,7 +31,7 @@ export M2_HOME=/opt/apache-maven-3.3.9
 export MAVEN_OPTS="${INIT_JVM_HEAP_SIZE} ${MAX_JVM_HEAP_SIZE}"
 
 
-export PATH=$PMD_HOME/bin:$GRAILS_HOME/bin:$GROOVY_HOME/bin:$IDEA_HOME/bin:$GLASSFISH_HOME/bin:$SERVICEMIX_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$CLOC_HOME:$SOAPUI_HOME/bin:$M2_HOME/bin:$JAVA_HOME/bin:$NB_HOME/bin:$PATH
+export PATH=$JEDIT_HOME:$PMD_HOME/bin:$GRAILS_HOME/bin:$GROOVY_HOME/bin:$IDEA_HOME/bin:$GLASSFISH_HOME/bin:$SERVICEMIX_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$CLOC_HOME:$SOAPUI_HOME/bin:$M2_HOME/bin:$JAVA_HOME/bin:$NB_HOME/bin:$PATH
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!

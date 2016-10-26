@@ -1,8 +1,6 @@
 
+#
 # .bashrc
-#
-# @author: frederick.bass
-#
 #
 
 # Source global definitions
