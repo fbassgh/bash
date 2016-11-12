@@ -44,7 +44,7 @@ alias groovyv='groovy -v'
 alias tomcatstop='catalina.sh stop'
 alias tomcatstart='catalina.sh start'
 alias tomcatrs='tomcatstop;tomcatstart'
-alias l7client='nohup ~/Manager-8.4.00/Manager.sh &>/dev/null &'
+alias l7client='nohup ~/Manager-9.1.00/Manager.sh &>/dev/null &'
 alias l7client9='nohup ~/Manager-8.2.00/Manager.sh &>/dev/null &'
 alias understand='nohup sh /opt/understand-4.0.860-Linux-64bit/bin/linux64/understand &>/dev/null &'
 

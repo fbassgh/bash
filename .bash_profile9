@@ -7,16 +7,16 @@
 # User specific environment and startup programs
 
 export PATH=$PATH:.
-export CATALINA_HOME=/opt/apache-tomcat-8.5.4
+export CATALINA_HOME=/opt/tomcat
 export CLOC_HOME=/opt/cloc-1.64
-export GRADLE_HOME=/opt/gradle-3.1
+export GRADLE_HOME=/opt/gradle
 export GRAILS_HOME=~/.sdkman/candidates/grails/current/
-export GROOVY_HOME=/opt/groovy-2.4.7
-export NB_HOME=/opt/netbeans8.2
+export GROOVY_HOME=/opt/groovy
+export NB_HOME=/opt/netbeans
 export IDEA_HOME=/opt/idea-IU-162.2032.8
 export SOAPUI_HOME=/opt/SoapUI-5.0.0
 export SERVICEMIX_HOME=/opt/apache-servicemix-6.1.1
-export GLASSFISH_HOME=/opt/glassfish4/glassfish
+export GLASSFISH_HOME=/opt/glassfish
 export EDITOR=/usr/bin/vim
 
 export JAVA_HOME=/opt/jdk-9-ea_140
