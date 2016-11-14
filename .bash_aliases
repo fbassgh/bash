@@ -8,7 +8,7 @@
 
 alias cp='yes | cp -pv'
 alias mv='mv -fv'
-alias rm='rm -rfv'
+alias rm='rm -rf'
 alias scp='scp -v'
 alias cls='clear'
 alias ll='ls -la'
@@ -49,9 +49,9 @@ alias l7client9='nohup ~/Manager-8.2.00/Manager.sh &>/dev/null &'
 alias understand='nohup sh /opt/understand-4.0.860-Linux-64bit/bin/linux64/understand &>/dev/null &'
 
 # Java SW Dev Environment
-alias j7='echo -e "\nConfiguring environment for Java 7...\n";source ~/.bash_profile7;source ~/.bash_aliases;javav;echo -e "\n"'
-alias j8='echo -e "\nConfiguring environment for Java 8...\n";source ~/.bash_profile8;source ~/.bash_aliases;javav;echo -e "\n"'
-alias j9='echo -e "\nConfiguring environment for Java 9...\n";source ~/.bash_profile9;source ~/.bash_aliases;javav;echo -e "\n"'
+alias j7='echo -e "\nConfigured environment for Java 7\n";source ~/.bash_profile7;source ~/.bash_aliases;javav;echo -e "\n"'
+alias j8='echo -e "\nConfigured environment for Java 8\n";source ~/.bashrc;echo -e "\n"'
+alias j9='echo -e "\nConfigured environment for Java 9\n";source ~/.bash_profile9;source ~/.bash_aliases;javav;echo -e "\n"'
 
 # Subversion
 alias svnv='svn --version'
@@ -93,7 +93,6 @@ alias dumpversions='echo -e "\n--- JAVA ---"; java -version;
                     echo -e "\n--- PYTHON ---";python --version; 
                     echo -e "\n--- GCC ---";gcc --version | grep gcc; 
                     echo -e "\n--- MAKE ---";make --version | grep "GNU Make"; 
-                    echo -e "\n--- OPERATING SYSTEM ---"; uname -a; 
                     echo -e "\n"'
 
 alias dumptime='echo -e "\nLocal date/time:\t$(date)";echo -e "Universal date/time:\t$(date --utc)\n"'
