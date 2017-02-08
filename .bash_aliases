@@ -19,6 +19,11 @@ alias vi='/usr/bin/vim'
 alias whatsize='du -s'
 alias psef='ps -ef'
 
+# Weblogic
+alias wlstart='nohup sh ${ORACLE_HOME}/user_projects/domains/jms/bin/startWebLogic.sh &>/dev/null &'
+alias wlstop='sh ${ORACLE_HOME}/user_projects/domains/jms/bin/stopWebLogic.sh'
+alias wlrestart='wlstop;wlstart'
+
 # Web Browsers
 alias firefox='nohup firefox &>/dev/null &'
 alias chrome='nohup google-chrome &>/dev/null &'
