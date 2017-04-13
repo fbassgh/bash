@@ -2,6 +2,8 @@
 #
 # .bash_aliases
 #
+# author: frederick.bass
+#
 
 
 # User specific aliases and functions
@@ -12,8 +14,6 @@ alias rm='rm -rf'
 alias scp='scp -v'
 alias cls='clear'
 alias ll='ls -la'
-alias llh='ls -lah'
-alias lt='ls -lat'
 alias lart='ls -lart'
 alias vi='/usr/bin/vim'
 alias whatsize='du -s'
@@ -25,7 +25,7 @@ alias wlstop='sh ${ORACLE_HOME}/user_projects/domains/jms/bin/stopWebLogic.sh'
 alias wlrestart='wlstop;wlstart'
 
 # Web Browsers
-alias firefox='nohup firefox &>/dev/null &'
+alias ffox='nohup firefox &>/dev/null &'
 alias chrome='nohup google-chrome &>/dev/null &'
 
 # ServiceMix
@@ -77,46 +77,49 @@ alias gits='git status'
 alias gitv='git --version'
 
 # Miscellaneous
+alias telegram='nohup Telegram &>/dev/null &'
 alias bashrc='vi ~/.bashrc'
 alias bashpro='vi ~/.bash_profile'
 alias creds='cat ~/hostshare/SW_dev_cred.txt'
-alias hosts='sudo vi /etc/hosts'
-alias chosts='sudo cat /etc/hosts'
-alias mci='mvn clean install'
-alias dumpversions='echo -e "\n--- JAVA ---"; java -version; 
-                    echo -e "\n--- MAVEN ---"; mvn -v | grep "Apache Maven"; 
-                    echo -e "\n--- SUBVERSION ---"; svn --version | grep " version"; 
-                    echo -e "\n--- GIT ---";git --version; 
-                    echo -e "\n--- MERCURIAL ---";hg version | grep "version"; 
-                    echo -e "\n--- DOCKER ---";docker -v; 
-                    echo -e "\n--- GRADLE ---";gradle -v | grep "Gradle"; 
-                    echo -e "\n--- GRAILS ---";grails -v; 
-                    echo -e "\n--- GROOVY ---";groovy -v; 
-                    echo -e "\n--- TOMCAT ---";catalina.sh version | grep "Server version"; 
-                    echo -e "\n--- GLASSFISH ---";asadmin version | grep "Version ="; 
-                    echo -e "\n--- PERL ---";perl --version | grep "This is perl"; 
-                    echo -e "\n--- PYTHON ---";python --version; 
-                    echo -e "\n--- GCC ---";gcc --version | grep gcc; 
-                    echo -e "\n--- MAKE ---";make --version | grep "GNU Make"; 
-                    echo -e "\n"'
+alias hosts='sudo cat /etc/hosts'
 
-alias dumptime='echo -e "\nLocal date/time:\t$(date)";echo -e "Universal date/time:\t$(date --utc)\n"'
+# Diagnostics
+alias versions='echo -e "\n--- JAVA ---"; java -version; 
+                echo -e "\n--- MAVEN ---"; mvn -v | grep "Apache Maven"; 
+                echo -e "\n--- SUBVERSION ---"; svn --version | grep " version"; 
+                echo -e "\n--- GIT ---";git --version; 
+                echo -e "\n--- MERCURIAL ---";hg version | grep "version"; 
+                echo -e "\n--- DOCKER ---";docker -v; 
+                echo -e "\n--- GRADLE ---";gradle -v | grep "Gradle"; 
+                echo -e "\n--- GRAILS ---";grails -v; 
+                echo -e "\n--- GROOVY ---";groovy -v; 
+                echo -e "\n--- TOMCAT ---";catalina.sh version | grep "Server version"; 
+                echo -e "\n--- GLASSFISH ---";asadmin version | grep "Version ="; 
+                echo -e "\n--- PERL ---";perl --version | grep "This is perl"; 
+                echo -e "\n--- PYTHON ---";python --version; 
+                echo -e "\n--- GCC ---";gcc --version | grep gcc; 
+                echo -e "\n--- MAKE ---";make --version | grep "GNU Make"; 
+                echo -e "\n--- FIREFOX ---";firefox --version; 
+                echo -e "\n--- THUNDERBIRD ---";thunderbird --version; 
+                echo -e "\n--- CHROME ---";google-chrome --version; 
+                echo -e "\n"'
 
-alias dumppath='echo -e "\n--- PATH ---\n${PATH}\n"'
+alias times='echo -e "\nLocal date/time:\t$(date)";echo -e "Universal date/time:\t$(date --utc)\n"'
 
-alias dumposinfo='echo -e "\n--- OPERATING SYSTEM ---"; uname -a;
-                  echo -e "\n--- HW PLATFORM ---"; lscpu;
-                  echo -e "\n--- FILE SYSTEM ---"; df -T;
-                  echo -e "\n--- NETWORK INTERFACES ---";ip link show;
-                  echo -e "\n";netstat -i;
-                  echo -e "\n";ifconfig -a;
-                  echo -e "\n"'
+alias paths='echo -e "\n--- PATH ---\n${PATH}\n"'
 
-alias dumpall='
-               echo -e "---------------------\n";
+alias osinfo='echo -e "\n--- OPERATING SYSTEM ---"; uname -a;
+              echo -e "\n--- HW PLATFORM ---"; lscpu;
+              echo -e "\n--- FILE SYSTEM ---"; df -T;
+              echo -e "\n--- NETWORK INTERFACES ---";ip link show;
+              echo -e "\n";netstat -i;
+              echo -e "\n";ifconfig -a;
+              echo -e "\n"'
+
+alias dumpall='echo -e "---------------------\n";
                echo -e "--- Begin DumpAll ---\n";
                echo -e "---------------------";
-               dumpversions;dumppath;dumposinfo;
+               versionsdump;paths;osinfo;
                echo -e "-------------------\n";
                echo -e "--- End DumpAll ---\n";
                echo -e "-------------------\n"'

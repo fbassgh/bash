@@ -8,5 +8,5 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-source ~/.bash_profile;source ~/.bash_aliases
-
+# This .bash_profile is for Java 8 SW Development.
+source ~/.bash_profile

@@ -36,4 +36,3 @@ export PATH=$GRAILS_HOME/bin:$GROOVY_HOME/bin:$IDEA_HOME/bin:$GLASSFISH_HOME/bin
 export SDKMAN_DIR="~/.sdkman"
 [[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
-

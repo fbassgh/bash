@@ -36,4 +36,3 @@ export PATH=$MAVEN_HOME/bin:$JEDIT_HOME:$GRAILS_HOME/bin:$GROOVY_HOME/bin:$IDEA_
 export SDKMAN_DIR="~/.sdkman"
 [[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
-

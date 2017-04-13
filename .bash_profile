@@ -4,6 +4,8 @@
 # For JDK 8 SW Development.
 #
 
+source ~/.bash_aliases
+
 # User specific environment and startup programs
 
 export EDITOR=/usr/bin/vim
@@ -20,6 +22,7 @@ export PMD_HOME=/opt/pmd-5.5.1
 export SERVICEMIX_HOME=/opt/servicemix
 export SOAPUI_HOME=/opt/soapui
 export MAVEN_HOME=/opt/apache-maven-3.3.9
+export TELEGRAM_HOME=/opt/Telegram
 
 # Application Servers
 export CATALINA_HOME=/opt/tomcat
@@ -33,11 +36,12 @@ MAX_JVM_HEAP_SIZE=-Xmx8g
 export MAVEN_OPTS="${INIT_JVM_HEAP_SIZE} ${MAX_JVM_HEAP_SIZE}"
 
 
-export PATH=$MAVEN_HOME/bin:$JEDIT_HOME:$PMD_HOME/bin:$GRAILS_HOME/bin:$GROOVY_HOME/bin:$IDEA_HOME/bin:$GLASSFISH_HOME/bin:$SERVICEMIX_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$CLOC_HOME:$SOAPUI_HOME/bin:$JAVA_HOME/bin:$NB_HOME/bin:$PATH
+export PATH=$TELEGRAM/:$MAVEN_HOME/bin:$JEDIT_HOME:$PMD_HOME/bin:$GRAILS_HOME/bin:$GROOVY_HOME/bin:$IDEA_HOME/bin:$GLASSFISH_HOME/bin:$SERVICEMIX_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$CLOC_HOME:$SOAPUI_HOME/bin:$JAVA_HOME/bin:$NB_HOME/bin:$PATH
 
 
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK
 export SDKMAN_DIR="~/.sdkman"
 [[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
+sudo mount -av
 
