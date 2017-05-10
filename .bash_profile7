@@ -18,7 +18,7 @@ export IDEA_HOME=/opt/idea-IU-162.2032.8
 export JEDIT_HOME=/opt/jEdit-5.3.0
 export NB_HOME=/opt/netbeans
 export SERVICEMIX_HOME=/opt/apache-servicemix-6.1.1
-export SOAPUI_HOME=/opt/SoapUI-5.0.0
+export SOAPUI_HOME=/opt/soapui
 export MAVEN_HOME=/opt/apache-maven-3.0.5
 export JAVA_HOME=/opt/jdk1.7.0_60
 

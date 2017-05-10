@@ -85,23 +85,21 @@ alias hosts='sudo cat /etc/hosts'
 
 # Diagnostics
 alias versions='echo -e "\n--- JAVA ---"; java -version; 
-                echo -e "\n--- MAVEN ---"; mvn -v | grep "Apache Maven"; 
-                echo -e "\n--- SUBVERSION ---"; svn --version | grep " version"; 
-                echo -e "\n--- GIT ---";git --version; 
-                echo -e "\n--- MERCURIAL ---";hg version | grep "version"; 
                 echo -e "\n--- DOCKER ---";docker -v; 
+                echo -e "\n--- GCC ---";gcc --version | grep gcc; 
+                echo -e "\n--- GIT ---";git --version; 
                 echo -e "\n--- GRADLE ---";gradle -v | grep "Gradle"; 
                 echo -e "\n--- GRAILS ---";grails -v; 
                 echo -e "\n--- GROOVY ---";groovy -v; 
-                echo -e "\n--- TOMCAT ---";catalina.sh version | grep "Server version"; 
                 echo -e "\n--- GLASSFISH ---";asadmin version | grep "Version ="; 
+                echo -e "\n--- MAKE ---";make --version | grep "GNU Make"; 
+                echo -e "\n--- MAVEN ---"; mvn -v | grep "Apache Maven"; 
+                echo -e "\n--- MERCURIAL ---";hg version | grep "version"; 
                 echo -e "\n--- PERL ---";perl --version | grep "This is perl"; 
                 echo -e "\n--- PYTHON ---";python --version; 
-                echo -e "\n--- GCC ---";gcc --version | grep gcc; 
-                echo -e "\n--- MAKE ---";make --version | grep "GNU Make"; 
-                echo -e "\n--- FIREFOX ---";firefox --version; 
-                echo -e "\n--- THUNDERBIRD ---";thunderbird --version; 
-                echo -e "\n--- CHROME ---";google-chrome --version; 
+                echo -e "\n--- SQL PLUS ---";sqlplus -V; 
+                echo -e "\n--- SUBVERSION ---"; svn --version | grep " version"; 
+                echo -e "\n--- TOMCAT ---";catalina.sh version | grep "Server version"; 
                 echo -e "\n"'
 
 alias times='echo -e "\nLocal date/time:\t$(date)";echo -e "Universal date/time:\t$(date --utc)\n"'
@@ -119,7 +117,7 @@ alias osinfo='echo -e "\n--- OPERATING SYSTEM ---"; uname -a;
 alias dumpall='echo -e "---------------------\n";
                echo -e "--- Begin DumpAll ---\n";
                echo -e "---------------------";
-               versionsdump;paths;osinfo;
+               versions;paths;osinfo;
                echo -e "-------------------\n";
                echo -e "--- End DumpAll ---\n";
                echo -e "-------------------\n"'
